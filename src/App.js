@@ -39,7 +39,7 @@ export default class elaya extends Component {
           style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
         >
           {' '}
-          hello stackblits
+          hello gunalan
         </h1>
         <p>Start editing to see some magic happen :) </p>
         <Hello
