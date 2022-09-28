@@ -15,6 +15,8 @@ function Hello(props) {
     <div>
       hello {props.number}
       <button onClick={props.onClick}> click it</button>
+      <br></br>
+      hello {props.number}
       <button
         onClick={() => {
           setTimeout(() => {
