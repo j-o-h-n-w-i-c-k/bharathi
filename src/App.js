@@ -11,7 +11,22 @@ import './style.css';
 // }
 function Hello(props) {
   console.log(props);
-  return <div>hello</div>;
+  return (
+    <div>
+      hello {props.number}
+      <button onClick={props.onClick}> click it</button>
+      <button
+        onClick={() => {
+          setTimeout(() => {
+            props.onClick();
+          }, 2000);
+        }}
+      >
+        {' '}
+        click it{' '}
+      </button>
+    </div>
+  );
 }
 export default class elaya extends Component {
   render() {
@@ -24,11 +39,19 @@ export default class elaya extends Component {
           hello stackblits
         </h1>
         <p>Start editing to see some magic happen :) </p>
-        <Hello arr={[1, 2, 3, 4]} name={'elayabharathi'} number={1} />
+        <Hello
+          arr={[1, 2, 3, 4]}
+          name={'elayabharathi'}
+          number={1}
+          onClick={() => {
+            alert('success');
+          }}
+        />
       </div>
     );
   }
 }
+
 // export default class App extends Component
 // {
 //   constructor(props) {
