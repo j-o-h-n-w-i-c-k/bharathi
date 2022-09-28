@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import './index.html';
+// import './index.html';
 
 // export default function App() {
 //   return (
