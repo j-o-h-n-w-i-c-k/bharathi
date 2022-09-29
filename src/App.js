@@ -55,17 +55,17 @@ export default class App extends React.Component {
   }
 }
 
-// export default class App extends Component
-// {
-//   constructor(props) {
-//     super(props)
-//     this.state = {
-//       name: "elayabharathi",
-//       data_set: [],
-//       loadState: false
+export default class App extends React.Component
+{
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: "elayabharathi",
+      data_set: [],
+      loadState: false
 
-//     }
-// }
+    }
+}
 
 //   async componentDidMount() {
 //     let data = await axios.get('https://api.github.com/users/hadley/orgs')
