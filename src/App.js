@@ -47,6 +47,12 @@ export default class Test extends React.Component {
   }
 }
 export default class App extends React.Component{
+  constructor(){
+    super(props)
+    this.state={
+name:"elayabharathi"
+    }
+  }
   render() {
     return (
       <div>
@@ -59,7 +65,7 @@ export default class App extends React.Component{
         <p>Start editing to see some magic happen :) </p>
         <Hello
           arr={[1, 2, 3, 4]}
-          name={'elayabharathi'}
+          name={this.state.name}
           number={1}
           onClick={(data) => {
             alert(data.name);
