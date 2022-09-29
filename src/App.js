@@ -47,7 +47,12 @@ export default class Test extends React.Component {
   }
 }
 export default class App extends React.Component{
-  constructor(props){
+  
+    // state={       // global declaration
+    //   name : " test"
+    // }
+  
+  constructor(props){     //constructor declaration
     super(props)
     this.state={
 name:"elaya"
