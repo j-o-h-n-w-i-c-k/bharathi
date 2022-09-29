@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,Setname } from 'react';
 import './style.css';
 // import './index.html';
 
