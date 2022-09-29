@@ -14,19 +14,18 @@ function Hello(props) {
   console.log(props);
   return (
     <div>
-      hello {props.number}
+      {/* hello {props.number}
       <button onClick={props.onClick}> click it</button>
-      <br></br>
-      hello {props.number}
+      <br></br> */}
+      hello {props.name}
       <button
         onClick={() => {
           setTimeout(() => {
-            props.onClick();
+            props.onClick({ name: 'yogi' });
           }, 2000);
         }}
       >
-        {' '}
-        click it{' '}
+        {props.label}{' '}
       </button>
     </div>
   );
@@ -45,10 +44,20 @@ export default class App extends React.Component {
         <Hello
           arr={[1, 2, 3, 4]}
           name={'elayabharathi'}
-          number={2}
-          onClick={() => {
-            alert('success');
+          number={1}
+          onClick={(data) => {
+            alert(data.name);
           }}
+          label="save it"
+        />
+        <Hello
+          arr={[1, 2, 3, 4]}
+          name={'yogi'}
+          number={2}
+          onClick={(data) => {
+            console.log('clear');
+          }}
+          label="close it"
         />
       </div>
     );
