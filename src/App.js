@@ -11,7 +11,7 @@ import './style.css';
 //   );
 // }
 function Hello(props) {
-  console.log(props); 
+  console.log(props);
   return (
     <div>
       hello {props.number}
@@ -31,7 +31,7 @@ function Hello(props) {
     </div>
   );
 }
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
       <div>
