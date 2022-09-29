@@ -11,7 +11,7 @@ import './style.css';
 //   );
 // }
 function Hello(props) {
-  console.log(props);
+  console.log(props); 
   return (
     <div>
       hello {props.number}
