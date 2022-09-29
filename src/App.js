@@ -55,7 +55,7 @@ export default class App extends React.Component{
   constructor(props){     //constructor declaration
     super(props)
     this.state={
-name:"elaya"
+           name:"elaya"
     }
   }
   render() {
