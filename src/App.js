@@ -45,7 +45,7 @@ export default class App extends Component {
         <Hello
           arr={[1, 2, 3, 4]}
           name={'elayabharathi'}
-          number={1}
+          number={2}
           onClick={() => {
             alert('success');
           }}
