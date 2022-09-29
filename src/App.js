@@ -31,29 +31,29 @@ function Hello(props) {
     </div>
   );
 }
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1
-          style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
-        >
-          {' '}
-          hello gunalan
-        </h1>
-        <p>Start editing to see some magic happen :) </p>
-        <Hello
-          arr={[1, 2, 3, 4]}
-          name={'elayabharathi'}
-          number={2}
-          onClick={() => {
-            alert('success');
-          }}
-        />
-      </div>
-    );
-  }
-}
+// export default class App extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1
+//           style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
+//         >
+//           {' '}
+//           hello gunalan
+//         </h1>
+//         <p>Start editing to see some magic happen :) </p>
+//         <Hello
+//           arr={[1, 2, 3, 4]}
+//           name={'elayabharathi'}
+//           number={2}
+//           onClick={() => {
+//             alert('success');
+//           }}
+//         />
+//       </div>
+//     );
+//   }
+// }
 
 export default class App extends React.Component
 {
@@ -66,7 +66,7 @@ export default class App extends React.Component
 
     }
 }
-
+}
 //   async componentDidMount() {
 //     let data = await axios.get('https://api.github.com/users/hadley/orgs')
 //     this.setState({data_set: data.data, loadState: true})
