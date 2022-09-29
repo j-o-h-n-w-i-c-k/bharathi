@@ -14,9 +14,9 @@ function Hello(props) {
   console.log(props);
   return (
     <div>
-      {/* hello {props.number}
+      hello {props.number}
       <button onClick={props.onClick}> click it</button>
-      <br></br> */}
+      <br></br>
       hello {props.name}
       <button
         onClick={() => {
