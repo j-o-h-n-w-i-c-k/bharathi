@@ -38,7 +38,7 @@ export default class Test extends React.Component {
           style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
         >
           {' '}
-          hello gunalan
+          hello StackBlitz
         </h1>
         <p>Start editing to see some magic happen :) </p>
      
@@ -65,7 +65,7 @@ export default class App extends React.Component{
           style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
         >
           {' '}
-          hello gunalan
+          hello StackBlitz
         </h1>
         <p>Start editing to see some magic happen :) </p>
         <Hello
