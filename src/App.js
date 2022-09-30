@@ -1,4 +1,5 @@
 import React, { Component,Setname } from 'react';
+import * as ReactDOM from 'react-dom/client';
 import './style.css';
 // import './index.html';
 
@@ -13,7 +14,7 @@ import './style.css';
 function Hello(props) {
   console.log(props);
   return (
-    <div>
+    <div id ="root">
       {/* hello {props.number}
       <button onClick={props.onClick}> click it</button>
       <br></br> */}
@@ -38,7 +39,7 @@ export default class Test extends React.Component {
           style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
         >
           {' '}
-          hello gunalan
+          hello StackBlitz
         </h1>
         <p>Start editing to see some magic happen :) </p>
      
@@ -65,7 +66,7 @@ export default class App extends React.Component{
           style={{ color: 'white', backgroundColor: 'grey', borderRadius: 5 }}
         >
           {' '}
-          hello gunalan
+          hello StackBlitz
         </h1>
         <p>Start editing to see some magic happen :) </p>
         <Hello
@@ -90,3 +91,5 @@ export default class App extends React.Component{
     );
   }
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Hello />);
