@@ -1,5 +1,5 @@
 import React, { Component,Setname } from 'react';
-import * as ReactDOM from 'react-dom/client';
+ import ReactDOM from 'react-dom/client';
 import './style.css';
 // import './index.html';
 
